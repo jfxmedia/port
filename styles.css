@@ -59,6 +59,12 @@ body {
     display: flex;
     flex-direction: row;
 }
+/* About Me Section */
+#about-me {
+    background-color: beige;
+    padding: 50px 20%;
+    min-height: 500px;  /* Minimum height set */
+}
 
 .about-me-image, .about-me-text {
     flex: 1;
@@ -68,7 +74,8 @@ body {
 /* Projects Section */
 #projects {
     background-color: #ffffff;
-    padding: 50px;
+    padding: 50px 20%;
+    min-height: 500px;  /* Minimum height set */
 }
 
 .projects-container {
