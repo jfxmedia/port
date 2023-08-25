@@ -96,6 +96,10 @@ body {
     transition: background-color 0.3s;
 }
 
+.projects-list ul li.selected {
+    text-decoration: underline;
+}
+
 .projects-list ul li:hover {
     background-color: lightblue;
 }
