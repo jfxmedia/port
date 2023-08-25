@@ -45,7 +45,7 @@ body {
 }
 
 .hero-text {
-    text-align: center;
+    text-align: left;
     color: white;
     margin: 0 20%;  /* 20% margin on both sides */
 }
