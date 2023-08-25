@@ -3,7 +3,16 @@ body, h1, h2, ul, p {
     margin: 0;
     padding: 0;
 }
-
+h1 {
+    font-size: 2em;
+    color: white;
+    text-decoration: italic;
+}
+p {
+    font-size: 1.3em;
+    font-color: white;
+    
+}
 /* Apply a background color to the whole page */
 body {
     background-color: #ffffff;
