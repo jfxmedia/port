@@ -22,7 +22,6 @@ body {
 }
 
 .overlay {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3));
     position: absolute;
     top: 0;
     left: 0;
@@ -31,6 +30,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('#hexPattern'); /* Reference to the SVG pattern */
+}
+
+.hex-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  /* Keep it below the text */
 }
 
 .hero-text {
