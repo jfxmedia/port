@@ -3,20 +3,13 @@ body, h1, h2, ul, p {
     margin: 0;
     padding: 0;
 }
-h1 {
-    font-size: 2em;
-    color: white;
-    text-decoration: italic;
-}
-p {
-    font-size: 1.3em;
-    font-color: white;
-    
-}
-/* Apply a background color to the whole page */
+
+/* Global Styles */
 body {
-    background-color: #ffffff;
-    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
 /* Main Hero Section */
@@ -29,8 +22,7 @@ body {
 }
 
 .overlay {
-    background-color: #000;
-    opacity: 70%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3));
     position: absolute;
     top: 0;
     left: 0;
@@ -42,77 +34,70 @@ body {
 }
 
 .hero-text {
-    text-align: left;
+    text-align: center;
     color: white;
-    margin: 0 20%;  /* 20% margin on both sides */
+    margin: 0 20%;
+    font-size: 2em;
 }
 
-/* About Me and Projects Sections - 20% padding on both sides */
-#about-me, #projects {
-    padding: 50px 20%;
+/* About Me Section */
+#about-me {
+    background-color: #FFFFFF;
+    padding: 80px 20%;
+    min-height: 500px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-me-container {
     display: flex;
-    flex-direction: row;
-}
-/* About Me Section */
-#about-me {
-    background-color: beige;
-    padding: 50px 20%;
-    min-height: 500px;  /* Minimum height set */
+    gap: 2rem;
 }
 
 .about-me-image, .about-me-text {
     flex: 1;
-    padding: 20px;
 }
 
 /* Projects Section */
 #projects {
-    background-color: #ffffff;
-    padding: 50px 20%;
-    min-height: 500px;  /* Minimum height set */
+    background-color: #F4F4F4;
+    padding: 80px 20%;
+    min-height: 500px;
 }
 
 .projects-container {
     display: flex;
-    flex-direction: row;
+    gap: 2rem;
 }
 
 .projects-list {
     flex: 1;
-    padding: 20px;
 }
 
 .projects-list ul li {
     list-style: none;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s;
+    font-size: 1.2em;
 }
 
-.projects-list ul li.selected {
-    text-decoration: underline;
-}
-
-.projects-list ul li:hover {
-    background-color: lightblue;
+.projects-list ul li:hover, .projects-list ul li.selected {
+    background-color: #007BFF;
+    color: white;
 }
 
 .divider {
     width: 1px;
-    background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ccc;
 }
 
 .projects-image {
     flex: 4;
-    padding: 20px;
 }
 
 .projects-image img {
-    width: 80%;
+    width: 100%;
     border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
