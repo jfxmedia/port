@@ -50,6 +50,18 @@ nav ul li a:hover {
     color: #87CEEB; /* Sky Blue */
 }
 
+/* Logo */
+.logo {
+    font-size: 2em;
+    color: #FDF3E7; /* Cream */
+    margin-right: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Hero Section */
 .hero {
     background-image: linear-gradient(to bottom, #87CEEB, #1E90FF); /* Sky Blue to Dodger Blue */
