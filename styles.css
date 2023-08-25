@@ -21,28 +21,6 @@ body {
     position: relative;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        background-image: url('path/to/your/hexagonal-overlay.svg');
-    background-size: cover;  /* make sure the pattern covers the entire section */
-    background-position: center;
-}
-
-.hex-overlay {
-    background-image: url('bg-main.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    position: relative;
-}
-
 .hero-text {
     text-align: center;
     color: white;
