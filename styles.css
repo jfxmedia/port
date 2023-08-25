@@ -8,18 +8,13 @@ body, h1, h2, h3, p {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header and Navigation */
 header {
-    background-color: #F96D34; /* Mexican Orange */
-    height: 35px;
+    background-color: transparent;
     position: fixed;
     top: 0;
     left: 0;
@@ -27,48 +22,38 @@ header {
     z-index: 100;
 }
 
-nav ul {
+nav {
+    background: linear-gradient(to bottom, #87CEEB, #FF4500); /* Sky Blue to Sunset Orange */
+    height: 100vh; /* Take up full browser window */
+    color: #FFF; /* White */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links {
     list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100%;
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
-nav ul li {
-    margin: 0 10px;
+.nav-links li {
+    margin-left: 20px;
 }
 
-nav ul li a {
+.nav-links a {
     text-decoration: none;
     color: #FFF; /* White */
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #87CEEB; /* Sky Blue */
-}
-
-/* Logo */
-.logo {
-    font-size: 2em;
-    color: #FFF; /* White */
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 10px;
-}
-
-.logo a {
-    text-decoration: none;
-    color: inherit;
+.nav-links a:hover {
+    color: #FDF3E7; /* Cream */
 }
 
 /* Hero Section */
 .hero {
-    background: url('path/to/your/hero-image.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(to bottom, #87CEEB, #FF4500); /* Sky Blue to Sunset Orange */
     color: #FFF; /* White */
     text-align: left;
     padding: 150px 0;
