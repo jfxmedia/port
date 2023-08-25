@@ -53,8 +53,11 @@ nav ul li a:hover {
 /* Logo */
 .logo {
     font-size: 2em;
-    color: #FDF3E7; /* Cream */
-    margin-right: 10px;
+    color: #FFF; /* White */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
 }
 
 .logo a {
@@ -64,54 +67,38 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(to bottom, #87CEEB, #1E90FF); /* Sky Blue to Dodger Blue */
+    background: url('path/to/your/hero-image.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #FFF; /* White */
-    text-align: center;
+    text-align: left;
     padding: 150px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .hero h1 {
     font-size: 3em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
-/* About and Projects Sections */
-section {
-    padding: 50px 0;
+/* Sections */
+.section {
+    background-color: #F9F9F9; /* Light Gray */
+    padding: 100px 0;
 }
 
-/* Projects */
-.project {
-    background-color: #F9E7D2; /* Pale Orange */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-/* Contact */
-#contact {
-    background-color: #FFF; /* White */
-}
-
-/* Footer */
-footer {
-    background-color: #1E90FF; /* Dodger Blue */
-    color: #FFF; /* White */
-    text-align: center;
-    padding: 20px 0;
-}
+/* Your existing CSS styles */
 
 /* Media Queries */
 @media (max-width: 768px) {
-    nav ul {
-        justify-content: center;
-    }
-
-    nav ul li {
-        margin: 0 5px;
-    }
+    /* Your existing media query styles */
 }
