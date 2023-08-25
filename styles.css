@@ -30,7 +30,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('#hexPattern'); /* Reference to the SVG pattern */
+        background-image: url('path/to/your/hexagonal-overlay.svg');
+    background-size: cover;  /* make sure the pattern covers the entire section */
+    background-position: center;
 }
 
 .hex-overlay {
