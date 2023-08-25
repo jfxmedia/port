@@ -47,12 +47,12 @@ body {
 .hero-text {
     text-align: center;
     color: white;
+    margin: 0 20%;  /* 20% margin on both sides */
 }
 
-/* About Me Section */
-#about-me {
-    background-color: beige;
-    padding: 50px;
+/* About Me and Projects Sections - 20% padding on both sides */
+#about-me, #projects {
+    padding: 50px 20%;
 }
 
 .about-me-container {
