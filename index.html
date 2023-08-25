@@ -1,54 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Frontend Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* Reset some default browser styles */
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Main Hero Section -->
-    <section id="main-hero">
-        <div class="overlay">
-            <div class="hero-text">
-                <h1>Hello, I'm [Your Name]</h1>
-                <p>I am a frontend developer specialized in creating amazing user experiences.</p>
-            </div>
-        </div>
-    </section>
+/* Apply a background color to the whole page */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
 
-    <!-- About Me Section -->
-    <section id="about-me">
-        <div class="about-me-container">
-            <div class="about-me-image">
-                <!-- Place your image here -->
-                <img src="about-me.jpg" alt="About me">
-            </div>
-            <div class="about-me-text">
-                <h2>About Me</h2>
-                <p>Your text goes here. Introduce yourself and what you do.</p>
-            </div>
-        </div>
-    </section>
+/* Main Hero Section */
+#main-hero {
+    background-image: url('main-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="projects-container">
-            <div class="projects-list">
-                <ul>
-                    <li data-img="project1.jpg">Project 1</li>
-                    <li data-img="project2.jpg">Project 2</li>
-                    <!-- Add more projects as needed -->
-                </ul>
-            </div>
-            <div class="divider"></div>
-            <div class="projects-image">
-                <!-- Project images will be loaded here -->
-                <img id="project-image" src="" alt="Project">
-            </div>
-        </div>
-    </section>
+.overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.hero-text {
+    text-align: center;
+    color: white;
+}
+
+/* About Me Section */
+#about-me {
+    background-color: beige;
+    padding: 50px;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-image, .about-me-text {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #ffffff;
+    padding: 50px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.projects-list {
+    flex: 1;
+    padding: 20px;
+}
+
+.projects-list ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.projects-list ul li:hover {
+    background-color: lightblue;
+}
+
+.divider {
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projects-image {
+    flex: 4;
+    padding: 20px;
+}
+
+.projects-image img {
+    width: 80%;
+    border-radius: 8px;
+}
