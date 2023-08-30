@@ -42,7 +42,8 @@ body {
     border-radius: 15px;  /* rounded corners */
     padding: 35px;  /* padding around text */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);  /* faint shadow */
-        width: 35%;  /* Takes up 35% of the hero area */
+    max-width: 40%;
+    margin: auto;
 
 }
 
