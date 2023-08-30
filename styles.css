@@ -43,7 +43,7 @@ body {
     padding: 35px;  /* padding around text */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);  /* faint shadow */
     max-width: 40%;
-    margin: 25px;
+    margin: 20%;
     border: 1px dotted black;
 
 }
