@@ -39,11 +39,12 @@ body {
 
 .hero-text-box {
     background-color: rgba(255, 255, 255, 0.1); /* white with 0.1 opacity */
-    border-radius: 15px;  /* rounded corners */
+    border-radius: 25px;  /* rounded corners */
     padding: 35px;  /* padding around text */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);  /* faint shadow */
     max-width: 40%;
     margin: 25px;
+    border: 1px solid blue;
 
 }
 
