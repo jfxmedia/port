@@ -50,8 +50,8 @@ body {
     text-align: center;
     color: black;
     font-size: 2em;
-        text-align: left;  /* Left-aligns the text */
-    color: black;
+    text-align: left;  /* Left-aligns the text */
+    color: white;
     font-size: 2em;
     padding: 35px;  /* Keeps the padding around the text */
 }
