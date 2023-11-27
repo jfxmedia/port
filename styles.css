@@ -14,51 +14,53 @@ body {
 
 /* Main Hero Section */
 #main-hero {
-    background-image: url('hero-bg.jpg');
+    background-image: url('hero-blue-split.jpg');
     background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-position: center center;
     position: relative;
+    height: 100vh;
+    display: flex;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('hex-overlay.svg');
-    background-size: cover;
-    background-position: center;
-        flex-direction: column;
-    align-items: flex-start;  /* Aligns items to the left */
-}
+
+
 
 .hero-text {
     text-align: center;
-    color: black;
+    color: #ffffff;
     font-size: 2em;
-    text-align: left;  /* Left-aligns the text */
-    color: white;
-    font-size: 2em;
-    padding: 35px;  /* Keeps the padding around the text */
+    text-align: left;
+    padding: 35px; 
+    max-width: 43%;
+    margin: 10%;
+}
+
+.hero-text h1 {
+    text-shadow: 2px 2px 20px #0000001d;
+    font-style: italic;
+    font-size: 1.8em;
+
+}
+
+.hero-text p {
+    opacity: .9;
+    font-size: 1em;
+    font-weight: 100;
 }
 
 
 /* About Me Section */
 #about-me {
-    background-color: #FFFFFF;
-    padding: 80px 20%;
-    min-height: 500px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    background-image: url('hero-orange-split.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 100vh;
+    display: flex;
 }
 
 .about-me-container {
     display: flex;
-    gap: 2rem;
 }
 
 .about-me-image, .about-me-text {
@@ -74,7 +76,6 @@ body {
 
 .projects-container {
     display: flex;
-    gap: 2rem;
 }
 
 .projects-list {
@@ -108,4 +109,20 @@ body {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll-down Indicator */
+.scroll-indicator {
+    position: absolute;
+    left: 80%;
+    top: 47%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+.scroll-icon {
+    width: 250%;
+    height: auto;
 }
