@@ -38,7 +38,7 @@ body {
     background-size: cover;
     background-position: center center;
     position: relative;
-    height: 100vh;
+    height: 90vh;
     display: flex;
 }
 
@@ -47,15 +47,17 @@ body {
     color: #ffffff;
     font-size: 2em;
     text-align: left;
-    padding: 35px; 
+    padding: 20px; 
     max-width: 50%;
     max-height: 28%;
     margin: 80px;
+    position: absolute;
 }
 
 .hero-text h1 {
     text-shadow: 2px 2px 20px #0000001d;
-    font-size: 1.8em;
+    font-size: 2.8em;
+    line-height: normal;
 }
 
 .hero-text p {
