@@ -10,49 +10,7 @@ body, h1, h2, ul, p {
     box-sizing: border-box;
   }
 
-/* MOBILE 767px and Smaller */
-@media screen and (max-width: 767px) {
-    .main-hero {
-        background-image: url('palm_leaf.jpg');
-        background-size: cover;
-        background-position: center center;
-        position: relative;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-    }
-    .hero-text {
-        text-align: center;
-        color: #fc1d1d;
-        font-size: 2em;
-        text-align: left;
-        padding: 20px; 
-        max-width: 50%;
-        max-height: 28%;
-        margin: 80px;
-        position: absolute;
-    }
-
-    .hero-text h1 {
-        text-shadow: 2px 2px 20px #0000001d;
-        font-size: 2.8em;
-        line-height: normal;
-        color: #fc1d1d;
-
-    }
-
-    .hero-text p {
-        opacity: .9;
-        font-size: 1em;
-        font-weight: 100;
-        color: #fc1d1d;
-
-    }
-}
-
-/* DESKTOP 768px and Larger */
-@media screen and (min-width: 768px) {
-/* Main Hero Section */
+    /* Main Hero Section */
     .main-hero {
         background-image: url('palm_leaf.jpg');
         background-size: cover;
@@ -111,4 +69,44 @@ body, h1, h2, ul, p {
         display: flex;
         background-color: rgb(0, 162, 255);
     }
+
+/* MOBILE 767px and Smaller */
+@media screen and (max-width: 1024px) {
+    .main-hero {
+        background-image: url('palm_leaf.jpg');
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-text {
+        text-align: center;
+        color: #ffffff;
+        font-size: 2em;
+        text-align: left;
+        padding: 20px; 
+        max-width: 50%;
+        max-height: 28%;
+        margin: 80px;
+        position: absolute;
+    }
+
+    .hero-text h1 {
+        text-shadow: 2px 2px 20px #0000001d;
+        font-size: 2.8em;
+        line-height: normal;
+        color: #ffffff;
+
+    }
+
+    .hero-text p {
+        opacity: .9;
+        font-size: 1em;
+        font-weight: 100;
+        color: #ffffff;
+
+    }
 }
+
