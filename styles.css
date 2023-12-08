@@ -81,6 +81,15 @@ body, h1, h2, ul, p {
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+    .navbar {
+        display: flex;
+        justify-content: end;
+        padding: 15px;
+    }
+    .nav-icon {
+        height: 90px;
+    }
+
     .main-hero {
         background-image: url('palm_leaf.jpg');
         background-size: cover;
