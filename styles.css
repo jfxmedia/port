@@ -1,143 +1,114 @@
-/* Reset some default browser styles */
+/* Global Styles */
+
 body, h1, h2, ul, p {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;    
     margin: 0;
     padding: 0;
 }
+* {
+    box-sizing: border-box;
+  }
 
-/* Global Styles */
-body {
-    background-color: #F4F4F4;
-    font-family: 'Lato', sans-serif;    
-    line-height: 1.6;
-    color: #333;
+/* MOBILE 767px and Smaller */
+@media screen and (max-width: 767px) {
+    .main-hero {
+        background-image: url('palm_leaf.jpg');
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-text {
+        text-align: center;
+        color: #fc1d1d;
+        font-size: 2em;
+        text-align: left;
+        padding: 20px; 
+        max-width: 50%;
+        max-height: 28%;
+        margin: 80px;
+        position: absolute;
+    }
+
+    .hero-text h1 {
+        text-shadow: 2px 2px 20px #0000001d;
+        font-size: 2.8em;
+        line-height: normal;
+        color: #fc1d1d;
+
+    }
+
+    .hero-text p {
+        opacity: .9;
+        font-size: 1em;
+        font-weight: 100;
+        color: #fc1d1d;
+
+    }
 }
 
+/* DESKTOP 768px and Larger */
+@media screen and (min-width: 768px) {
 /* Main Hero Section */
-#navbar {
-    display: flex;
-    height: 50px;
-    justify-content: left;
-    align-items: center;
-    padding: 0 40px;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,0));}
+    .main-hero {
+        background-image: url('palm_leaf.jpg');
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+    }
 
-.links {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0 20px;
-    width: 300px;
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
-}
+    .hero-text {
+        text-align: center;
+        color: #ffffff;
+        font-size: 2em;
+        text-align: left;
+        padding: 20px; 
+        max-width: 50%;
+        max-height: 28%;
+        margin: 80px;
+        position: absolute;
+    }
 
-/* Main Hero Section */
-#main-hero {
-    background-image: url('fire_bg.jpg');
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    height: 90vh;
-    display: flex;
-}
+    .hero-text h1 {
+        text-shadow: 2px 2px 20px #0000001d;
+        font-size: 2.8em;
+        line-height: normal;
+    }
 
-.hero-text {
-    text-align: center;
-    color: #ffffff;
-    font-size: 2em;
-    text-align: left;
-    padding: 20px; 
-    max-width: 50%;
-    max-height: 28%;
-    margin: 80px;
-    position: absolute;
-}
+    .hero-text p {
+        opacity: .9;
+        font-size: 1em;
+        font-weight: 100;
+    }
 
-.hero-text h1 {
-    text-shadow: 2px 2px 20px #0000001d;
-    font-size: 2.8em;
-    line-height: normal;
-}
+    .hero-btns {
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+        color: #ffffff;
+        font-size: .75em;
+        padding: 20px 0;
+        font-weight: 100;
+        width: fit-content
 
-.hero-text p {
-    opacity: .9;
-    font-size: 1em;
-    font-weight: 100;
+    }
 
-}
+    #work, #about {
+        background-color: rgb(0, 162, 255);
+        border-radius: 5px;
+        padding: 15px;
+        margin-right: 15px;
+    }
 
-
-/* About Me Section */
-#about-me {
-    height: 100vh;
-    display: flex;
-}
-
-.about-me-container {
-    display: flex;
-}
-
-.about-me-image, .about-me-text {
-    flex: 1;
-}
-
-/* Projects Section */
-#projects {
-    background-color: #F4F4F4;
-    padding: 80px 20%;
-    min-height: 500px;
-}
-
-.projects-container {
-    display: flex;
-}
-
-.projects-list {
-    flex: 1;
-}
-
-.projects-list ul li {
-    list-style: none;
-    padding: 15px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-    font-size: 1.2em;
-}
-
-.projects-list ul li:hover, .projects-list ul li.selected {
-    background-color: #007BFF;
-    color: white;
-}
-
-.divider {
-    width: 1px;
-    background-color: #ccc;
-}
-
-.projects-image {
-    flex: 4;
-}
-
-.projects-image img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Scroll-down Indicator */
-.scroll-indicator {
-    position: absolute;
-    left: 80%;
-    top: 47%;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-}
-
-.scroll-icon {
-    width: 250%;
-    height: auto;
+    /* About Me Section */
+    .about-me {
+        display: flex;
+        background-color: rgb(0, 162, 255);
+    }
 }
