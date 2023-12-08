@@ -24,7 +24,7 @@ body, h1, h2, ul, p {
     background-size: cover;
     background-position: center center;
     position: relative;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
 }
@@ -33,10 +33,11 @@ body, h1, h2, ul, p {
     text-align: center;
     color: #ffffff;
     text-align: left;
-
+    padding: 20px; 
+    max-width: 50%;
+    max-height: 28%;
+    margin: 80px;
     position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 .hero-text h1 {
@@ -91,25 +92,25 @@ body, h1, h2, ul, p {
     }
     
     .hero-text {
-        text-align: center;
         color: #f30b0b;
         text-align: left;
         max-width: 100%;
-        max-height: 28%;
-        margin: 80px;
         position: absolute;
         bottom: 0;
+        margin-bottom: 40%;
+ 
     }
     
     .hero-text h1 {
         text-shadow: 2px 2px 20px #0000001d;
-        font-size: 8em;
+        font-size: 10em;
         line-height: normal;
     }
     
     .hero-text p {
         opacity: .9;
         font-size: 4em;
+        line-height: 1.2;
         font-weight: 100;
     }
     
@@ -118,8 +119,7 @@ body, h1, h2, ul, p {
         justify-content: flex-start;
         text-align: center;
         color: #ffffff;
-        font-size: 2em;
-        padding: 20px 0;
+        font-size: 3em;
         font-weight: 100;
         width: fit-content
     
