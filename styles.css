@@ -10,6 +10,15 @@ body, h1, h2, ul, p {
     box-sizing: border-box;
 }
 
+.navbar {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+.nav-icon {
+    height: 60px;
+}
+
 .main-hero {
     background-image: url('palm_leaf.jpg');
     background-size: cover;
@@ -77,20 +86,18 @@ body, h1, h2, ul, p {
         background-size: cover;
         background-position: center center;
         position: relative;
-        height: 95vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
     }
     
     .hero-text {
         text-align: center;
-        color: #ffffff;
+        color: #f30b0b;
         text-align: left;
-        padding: 20px; 
         max-width: 100%;
         max-height: 28%;
         margin: 80px;
-        position: absolute;
     }
     
     .hero-text h1 {
