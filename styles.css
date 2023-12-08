@@ -8,43 +8,105 @@ body, h1, h2, ul, p {
 }
 * {
     box-sizing: border-box;
-  }
+}
 
-    /* Main Hero Section */
+.main-hero {
+    background-image: url('palm_leaf.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    text-align: left;
+    padding: 20px; 
+    max-width: 50%;
+    max-height: 28%;
+    margin: 80px;
+    position: absolute;
+}
+
+.hero-text h1 {
+    text-shadow: 2px 2px 20px #0000001d;
+    font-size: 2.8em;
+    line-height: normal;
+}
+
+.hero-text p {
+    opacity: .9;
+    font-size: 1em;
+    line-height: 1.3;
+    font-weight: 100;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    color: #ffffff;
+    font-size: .75em;
+    padding: 20px 0;
+    font-weight: 100;
+    width: fit-content
+
+}
+
+#work, #about {
+    background-color: rgb(0, 162, 255);
+    border-radius: 5px;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    background-color: rgb(0, 162, 255);
+}
+
+
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
     .main-hero {
         background-image: url('palm_leaf.jpg');
         background-size: cover;
         background-position: center center;
         position: relative;
-        height: 90vh;
+        height: 95vh;
         display: flex;
         flex-direction: column;
     }
-
+    
     .hero-text {
         text-align: center;
         color: #ffffff;
-        font-size: 2em;
         text-align: left;
         padding: 20px; 
-        max-width: 50%;
+        max-width: 100%;
         max-height: 28%;
         margin: 80px;
         position: absolute;
     }
-
+    
     .hero-text h1 {
         text-shadow: 2px 2px 20px #0000001d;
-        font-size: 2.8em;
+        font-size: 4em;
         line-height: normal;
     }
-
+    
     .hero-text p {
         opacity: .9;
-        font-size: 1em;
+        font-size: 1.6em;
         font-weight: 100;
     }
-
+    
     .hero-btns {
         display: flex;
         justify-content: flex-start;
@@ -54,59 +116,20 @@ body, h1, h2, ul, p {
         padding: 20px 0;
         font-weight: 100;
         width: fit-content
-
+    
     }
-
+    
     #work, #about {
         background-color: rgb(0, 162, 255);
         border-radius: 5px;
         padding: 15px;
         margin-right: 15px;
     }
-
+    
     /* About Me Section */
     .about-me {
         display: flex;
         background-color: rgb(0, 162, 255);
-    }
-
-/* MOBILE 767px and Smaller */
-@media screen and (max-width: 1024px) {
-    .main-hero {
-        background-image: url('palm_leaf.jpg');
-        background-size: cover;
-        background-position: center center;
-        position: relative;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-    .hero-text {
-        text-align: center;
-        color: #ffffff;
-        font-size: 2em;
-        text-align: left;
-        padding: 20px; 
-        max-width: 50%;
-        max-height: 28%;
-        margin: 80px;
-        position: absolute;
-    }
-
-    .hero-text h1 {
-        text-shadow: 2px 2px 20px #0000001d;
-        font-size: 2.8em;
-        line-height: normal;
-        color: #ffffff;
-
-    }
-
-    .hero-text p {
-        opacity: .9;
-        font-size: 1em;
-        font-weight: 100;
-        color: #ffffff;
-
     }
 }
 
